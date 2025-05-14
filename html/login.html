@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Learning Media</title>
+  <link rel="stylesheet" href="login.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.innerWidth <= 600) {
+        document.getElementById("stylesheet").setAttribute("href", "login-mobile.css");
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome To English Learning Media For X SMK</h1>
+  </header>
+  <div class="form-shadow"></div>
+  <div class="container-form">
+    <img class="logo" src="skenda.png" alt="Logo">
+    <div class="form">
+      <form action="./cptp.html" method="get">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="class">Class</label>
+          <input type="text" id="class" name="class" required>
+        </div>
+        <button type="submit" class="submit-button">
+          <span class="button-text">Submit</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

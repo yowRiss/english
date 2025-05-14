@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material</title>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  padding: 15px 20px; 
+}
+
+.navbar .button {
+  background-color: white; 
+  color: black; 
+  text-decoration: none; 
+  text-align: center; 
+  font-size: 16px; 
+  padding: 10px 15px; 
+  border: 2px solid black; 
+  border-radius: 15px; 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease; 
+  margin-right: 10px; 
+}
+
+.navbar .button:hover {
+  transform: scale(1.05); 
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.sidebar {
+  position: fixed; 
+  left: 20px;
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 20px; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
+  width: 200px; 
+  border: 2px solid black;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Diphylleia', serif;
+}
+
+.sidebar .sidebar-button {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px; 
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.sidebar .sidebar-button.active {
+  background-color: #f0f0f0;
+  border-color: #000000;
+  color: #5b5b5b;
+  font-weight: bold;
+}
+
+.sidebar .sidebar-button:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.material-section {
+  margin-left: 260px;
+  padding: 20px;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: none; 
+}
+
+.material-section.active {
+  display: block; /* Show the active section */
+}
+
+.material-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.material-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.material-section img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="menu.html" class="button">Home</a>
+        <a href="material1.html" class="button">Material</a>
+        <a href="quiz.html" class="button">Quiz</a>
+        <a href="game.html" class="button">Game</a>
+    </div>
+
+    <div class="sidebar">
+        <h2>Material</h2>
+        <a href="#" class="sidebar-button" onclick="showMaterial(0)">Pengertian Advertisement</a>
+        <a href="#" class="sidebar-button" onclick="showMaterial(1)">Tujuan Advertisement</a>
+        <a href="#" class="sidebar-button" onclick="showMaterial(2)">Jenis-jenis Advertisement</a>
+        <a href="#" class="sidebar-button" onclick="showMaterial(3)">Struktur Advertisement</a>
+    </div>
+    
+    <div id="material-sections">
+        <div class="material-section">
+            <h2>Pengertian Advertisement</h2>
+            <p><strong>What is advertisement text?</strong> Advertisement is a text, picture, audio, or video that promotes a product. Dalam bahasa Indonesia, iklan adalah sebuah teks, gambar, audio, atau video yang mempromosikan suatu produk.</p>
+            <img src="../image/materi1.png" alt="Advertisement">
+        </div>
+        <div class="material-section">
+            <h2>Tujuan Advertisement</h2>
+            <p><strong>What is the purpose of text advertising? </strong>Sebenarnya, ada banyak sekali tujuan dari teks iklan. Umumnya, marketers use advertisements to help companies to reach their objectives and increase revenue.
+            </p>
+            <p>Beberapa tujuan advertisement text yang lain, di antaranya:
+              <ol type="1">
+                <li>Mempersuasi pembaca untuk membeli atau menggunakan produk atau jasa yang ditawarkan.</li>
+                <li>Memberikan informasi terkain produk atau jasa yang diiklankan kepada masyarakat luas.</li>
+                <li>Meyakinkan pembaca bahwa produk atau jasa yang dijual benar dan berkualitas</li>
+              </ol></p>
+              <img src="../image/purpose.jpg" alt="purpose.jpg">
+        </div>
+        <div class="material-section">
+            <h2>Jenis-jenis Advertisement</h2>
+            <p>Berdasarkan definisinya tadi, advertisement bisa bermacam-macam bentuknya. Ada apa saja sih jenis-jenis advertisement text itu?
+            </p>
+            <p>
+              <ol type="1">
+                <li>Text and Picture (Tulisan dan Gambar)
+                  Iklan yang satu ini biasanya banyak kita temui di koran, brosur, atau baliho. Kamu juga bisa melihat banyak iklan berbentuk tulisan dan gambar ini di media sosial.</li>
+                <li>Audio (suara)
+                  Jenis iklan berbentuk suara biasanya umum digunakan di radio atau di podcast. Pasti pernah ‘kan lagi dengerin podcast terus kepotong iklan?</li>
+                <li>Video
+                  Last but not least, iklan juga bisa berupa video yang biasa kamu lihat di televisi atau di Youtube.</li>
+              </ol>
+            </p>
+            <div>
+              <h5>example of advertisement ></h5>
+            <img src="../image/contoh ads.jpg" alt="contoh ads">
+            </div>
+        </div>
+        <div class="material-section">
+          <h2>Struktur Advertisement</h2>
+          <img src="../image/aspect.jpg" alt="Advertisement Structure" class="material-image">
+          <ol type="1">
+              <li>
+                  <strong>Name of the product (Nama Produk yang Diiklankan):</strong>
+                  <p>
+                      Nama produk biasanya memiliki ukuran tulisan yang paling besar, sehingga pembaca bisa langsung mengenal apa produk yang diiklankan. 
+                      Contohnya: RG Bag.
+                  </p>
+              </li>
+              <li>
+                  <strong>Description of the product (Deskripsi Produk yang Diiklankan):</strong>
+                  <p>
+                      Bagian ini berisi informasi yang lebih detail mengenai barang dan jasa yang ditawarkan. Contohnya: 
+                      “RG Bag is the most comfortable and stylish bag you can use.” Produk ini sedang memberikan diskon “up to 50% on selected items.”
+                  </p>
+              </li>
+              <li>
+                  <strong>Contact details (Informasi Kontak yang Bisa Dihubungi):</strong>
+                  <p>
+                      Berisi informasi kontak seperti nomor telepon, email, media sosial, atau alamat toko. Contoh:
+                      Lantai 3 Ruang Mall, rgbag.com.
+                  </p>
+              </li>
+              <li>
+                  <strong>Catchy language (Bahasa yang Menarik Perhatian):</strong>
+                  <p>
+                      Menggunakan kata sifat yang menarik perhatian, seperti “comfortable” (nyaman) dan “stylish” (modis).
+                  </p>
+              </li>
+          </ol>
+      </div>
+      
+    </div>
+
+    <script>
+        function showMaterial(index) {
+            const sections = document.querySelectorAll('.material-section');
+            const buttons = document.querySelectorAll('.sidebar-button');
+            sections.forEach(section => section.classList.remove('active'));
+            buttons.forEach(button => button.classList.remove('active'));
+            sections[index].classList.add('active');
+            buttons[index].classList.add('active');
+        }
+        showMaterial(0);
+    </script>
+</body>
+</html>
